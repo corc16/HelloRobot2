@@ -13,6 +13,10 @@ class Piggy(object):
             left_rot()
             time.sleep(.5)
             stop()
+    def onward(self):
+        time.sleep(2)
+        fwd(2)
 
 p = Piggy()
 p.cha_cha()
+p.onward()
