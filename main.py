@@ -16,7 +16,7 @@ class Piggy(object):
     def onward(self):
         time.sleep(2)
         fwd(2)
-
+        stop()
 p = Piggy()
 p.cha_cha()
 p.onward()
