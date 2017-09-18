@@ -7,7 +7,7 @@ class Piggy(object):
         print("I AM ALIVE")
 
     def cha_cha(self):
-        for x in range(5):
+        for x in range(8):
             right_rot()
             time.sleep(.5)
             left_rot()
