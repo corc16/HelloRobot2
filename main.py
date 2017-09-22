@@ -38,7 +38,23 @@ class Piggy(object):
         for ang in range(20, 160, 2):
             servo(ang)
             time.sleep(.2)
-
 p = Piggy()
+
+def menu():
+    while True:
+        input = raw_input("Press 1 for Pulse \n Press 2 for Cruise \n Press 3 for Sweep")
+        if "1" in input:
+            p.pulse()
+        elif "2" in input:
+            p.cruise()
+        elif "3" in input:
+            p.servo_sweep()
+try:
+    menu()
+except Exception as ee:
+    print(ee)
+    from gopigo import *
+    stop()
+
 # p.cha_cha()
 # p.onward()
