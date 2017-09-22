@@ -31,8 +31,8 @@ class Piggy(object):
         fwd()
         while(True):
             if us_dist(15) < 30:
-                time.sleep(.2)
                 stop()
+            time.sleep(.2)
     def servo_sweep(self):
         """loops in a 120 degree arc and moves servo"""
         for ang in range(20, 160, 2):
