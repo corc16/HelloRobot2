@@ -35,7 +35,7 @@ class Piggy(object):
             time.sleep(.2)
     def servo_sweep(self):
         """loops in a 120 degree arc and moves servo"""
-        for ang in range(20, 160, 2):
+        for ang in range(20, 160, 2, 90):
             servo(ang)
             time.sleep(.2)
             stop()
