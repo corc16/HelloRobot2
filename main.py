@@ -31,8 +31,9 @@ class Piggy(object):
         fwd()
         while(True):
             if us_dist(15) < 30:
-                stop()
             time.sleep(.2)
+            stop()
+            
     def servo_sweep(self):
         """loops in a 120 degree arc and moves servo"""
         for ang in range(20, 160, 2):
@@ -43,7 +44,7 @@ p = Piggy()
 
 def menu():
     while True:
-        input = raw_input("Press 1 for Pulse \n Press 2 for Cruise \n Press 3 for Sweep")
+        input = raw_input("Press 1 for Pulse \nPress 2 for Cruise \nPress 3 for Sweep")
         if "1" in input:
             p.pulse()
         elif "2" in input:
